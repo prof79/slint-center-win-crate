@@ -1,6 +1,6 @@
 [package]
 name = "slint-center-win"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["prof79 <markus@markusegger.at>"]
 description = "Center a Slint window running on a `winit` backend."
@@ -12,5 +12,5 @@ readme = "README.md"
 
 [dependencies]
 slint = "1"
-i-slint-backend-winit = { version = "*", features = ['renderer-femtovg', 'renderer-skia', 'renderer-software'] }
+i-slint-backend-winit = { version = "1", features = ['renderer-femtovg', 'renderer-skia', 'renderer-software'] }
 winit = "0"
