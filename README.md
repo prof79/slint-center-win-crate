@@ -1,4 +1,4 @@
-# slint-center-win 0.1.0
+# slint-center-win 0.1.1
 Center a [Slint](https://slint.dev) window running on a `winit` backend.
 
 ## Usage
