@@ -4,26 +4,26 @@ Center a [Slint](https://slint.dev) window running on a `winit` backend.
 
 ## Usage
 
-    ```rust
-    use slint_center_win::center_window;
+```rust
+use slint_center_win::center_window;
 
-    slint::include_modules!();
+slint::include_modules!();
 
-    fn main() -> Result<(), slint::PlatformError> {
-        // See: https://slint.dev/releases/1.5.1/docs/rust/slint/docs/generated_code/struct.SampleComponent
-        let ui = AppWindow::new()?;
+fn main() -> Result<(), slint::PlatformError> {
+    // See: https://slint.dev/releases/1.5.1/docs/rust/slint/docs/generated_code/struct.SampleComponent
+    let ui = AppWindow::new()?;
 
-        // Window must be shown first so sizes get calculated properly
-        // Don't know if there is a better way, slight redraw artifacting on move
-        ui.show()?;
+    // Window must be shown first so sizes get calculated properly
+    // Don't know if there is a better way, slight redraw artifacting on move
+    ui.show()?;
 
-        center_window(ui.window());
+    center_window(ui.window());
 
-        // ...
+    // ...
 
-        ui.run()
-    }
-    ```
+    ui.run()
+}
+```
 
 ## Releases
 
