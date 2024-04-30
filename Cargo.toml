@@ -1,6 +1,6 @@
 [package]
 name = "slint-center-win"
-version = "0.1.2"
+version = "0.2.0"
 edition = "2021"
 authors = ["prof79 <markus@markusegger.at>"]
 description = "Center a Slint window running on a `winit` backend."
@@ -11,6 +11,5 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-slint = "1"
-i-slint-backend-winit = { version = "1", features = ['renderer-femtovg', 'renderer-skia', 'renderer-software'] }
-winit = "0"
+slint = "1.5"
+i-slint-backend-winit = { version = "1.5", features = ['renderer-femtovg', 'renderer-skia', 'renderer-software'] }

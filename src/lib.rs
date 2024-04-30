@@ -1,9 +1,9 @@
 // lib.rs
 // Center a Slint `winit` window
 
-use winit::dpi::PhysicalPosition;
-use winit::monitor::MonitorHandle;
-use winit::window::Window;
+use i_slint_backend_winit::winit::dpi::PhysicalPosition;
+use i_slint_backend_winit::winit::monitor::MonitorHandle;
+use i_slint_backend_winit::winit::window::Window;
 use i_slint_backend_winit::WinitWindowAccessor;
 
 /// Centers the window on the primary monitor.
@@ -15,7 +15,7 @@ pub fn center_window(window: &slint::Window) {
         window.with_winit_window(|window| {
             
             match window.primary_monitor() {
-                Some(monitor) => set_centered(&window, monitor),
+                Some(monitor) => set_centered(window, &monitor),
                 None => (),
             }
 
@@ -33,7 +33,8 @@ pub fn center_window(window: &slint::Window) {
 /// It's not tested on macOS.
 /// 
 /// This has no effect on Android, Wayland or iOS.
-fn set_centered(window: &Window, monitor: MonitorHandle) {
+fn set_centered(window: &Window, monitor: &MonitorHandle) {
+
     let window_size = window.outer_size();
 
     let monitor_size = monitor.size();
