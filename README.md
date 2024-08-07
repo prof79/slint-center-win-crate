@@ -1,4 +1,4 @@
-# slint-center-win 0.2.0
+# slint-center-win 0.3.0
 
 Center a [Slint](https://slint.dev) window running on a `winit` backend.
 
@@ -26,6 +26,11 @@ fn main() -> Result<(), slint::PlatformError> {
 ```
 
 ## Releases
+
+### v0.3.0
+
+Added [pull request](https://github.com/prof79/slint-center-window/pull/1) from the [standalone example](https://github.com/prof79/slint-center-window) so this is also tested on macOS now 😊 Thanks go to @zxscn.
+Also incorporated @ogoffart's advice to be explicit about `i-slint-*` internal crate versioning.
 
 ### v0.2.0
 
