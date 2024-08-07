@@ -27,10 +27,14 @@ fn main() -> Result<(), slint::PlatformError> {
 
 ## Releases
 
+### v0.3.1
+
+Forgot the essential `=` and minor doc update.
+
 ### v0.3.0
 
-Added [pull request](https://github.com/prof79/slint-center-window/pull/1) from the [standalone example](https://github.com/prof79/slint-center-window) so this is also tested on macOS now 😊 Thanks go to @zxscn.
-Also incorporated @ogoffart's advice to be explicit about `i-slint-*` internal crate versioning.
+Added [pull request](https://github.com/prof79/slint-center-window/pull/1) from the [standalone example](https://github.com/prof79/slint-center-window) so this is also tested on macOS now 😊 Thanks go to [@zxscn](https://github.com/zxscn).
+Also incorporated [@ogoffart](https://github.com/ogoffart)'s advice to be explicit about `i-slint-*` internal crate versioning.
 
 ### v0.2.0
 
